@@ -29,7 +29,8 @@ export default {
         "kali-purple": "#8C42AB",
       },
       fontFamily: {
-        "fira-code": ["Fira Code", "monospace"],
+        "fira-code": ["Press Start 2P", "monospace"],
+        "press-start": ["Press Start 2P", "monospace"],
         segoe: "Segoe UI",
       },
       keyframes: {

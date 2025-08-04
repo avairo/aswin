@@ -1,12 +1,11 @@
 import { Prompt } from "../types";
 
-export const MOTD = `Welcome to 0l1v3rr.github.io!
+export const MOTD = `Welcome to avairo.github.io!
 
-GitHub:  &nbsp;&nbsp;<a href="https://github.com/0l1v3rr" target="_blank" rel="noopener noreferrer">https://github.com/0l1v3rr</a>
-LinkedIn: <a href="https://linkedin.com/in/0l1v3rr" target="_blank" rel="noopener noreferrer">https://linkedin.com/in/0l1v3rr</a>
+GitHub:  &nbsp;&nbsp;<a href="https://github.com/avairo" target="_blank" rel="noopener noreferrer">https://github.com/avairo</a>
 
-Hello, I'm <b>Olivér Mrakovics</b>. I am a <b>full-stack</b> engineer specializing in front-end development.
-In September 2024, I became a <b>world champion</b> in <b>web development</b>. 🥇
+Hello, I'm <b>Asw1n</b>. I am a <b>full-stack</b> developer specializing in web and mobile app development.
+And also skilled in <b>cyber security</b> and <b>ethical hacking</b> ,focused on creating secure, modern solutions.
 
 Type 'help' to see the available commands.`.replace(/\n/g, "<br/>");
 
@@ -79,34 +78,28 @@ const KALI_LOGO = `
     </span>
   `;
 
-const TECH_STACK = `<a href="https://github.com/0l1v3rr/github-readme-tech-stack" target="_blank"><img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&width=420&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=2&theme=0l1v3rr&line1=node.js%2Cnode.js%2Cauto%3Bexpress%2Cexpress%2Cffffff%3Bnestjs%2Cnestjs%2Ce12a54%3B&line2=react%2Creact%2Cauto%3Btailwindcss%2Ctailwind%2Cauto%3Btypescript%2Ctypescript%2Cauto%3B" alt="Tech Stack" /></a>`;
+// const TECH_STACK = `<a href="https://github.com/0l1v3rr/github-readme-tech-stack" target="_blank"><img src="https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&width=420&align=center&titleAlign=center&fontSize=20&lineHeight=10&lineCount=2&theme=0l1v3rr&line1=node.js%2Cnode.js%2Cauto%3Bexpress%2Cexpress%2Cffffff%3Bnestjs%2Cnestjs%2Ce12a54%3B&line2=react%2Creact%2Cauto%3Btailwindcss%2Ctailwind%2Cauto%3Btypescript%2Ctypescript%2Cauto%3B" alt="Tech Stack" /></a>`;
 
 const COMMANDS: Record<
   string,
   (username: string, args: string[], history: string[]) => string
 > = {
-  su: () => "",
-  whoami: (username) => username,
   motd: () => MOTD,
-  pwd: () => "/",
   date: () => new Date().toLocaleDateString(),
-  github: () => openLink("https://github.com/0l1v3rr"),
-  linkedin: () => openLink("https://linkedin.com/in/0l1v3rr"),
-  repo: () => openLink("https://github.com/0l1v3rr/0l1v3rr.github.io"),
-  email: () => openLink("mailto:oliver.mrakovics@gmail.com"),
-  cat: () =>
-    `Here's a cute cat for you! 🐱<br/><br/>${openLink("https://cataas.com/cat/cute")}`,
+  github: () => openLink("https://github.com/avairo"),
+  email: () => openLink("mailto:deavairoaswin@gmail.com"),
   kali: () => KALI_LOGO,
-  techstack: () => TECH_STACK,
   about: (username) => `Hello, ${username}!
 
-    Passionate about <b>web development</b>, I am a <b>full-stack engineer</b> specializing in <b>front-end development</b>. I started my coding journey at the age of <b>12</b>, proving my dedication and expertise in the field.
+    Passionate about <b>web development</b>, I am a <b>full‑stack developer</b> specializing in <b>web and mobile app development (Flutter, Node.js)</b>. I focus on creating <b>modern</b> and <b>high‑performance digital solutions</b>.  
 
-    My focus on delivering high-quality applications is fueled by a genuine interest in leading technologies, particularly <b>React</b>, <b>TypeScript</b>, and <b>Node.js</b>. Leveraging hands-on experience with various JavaScript frameworks and libraries <b>(Next.js, Express, NestJS, etc.)</b> within the React and Node.js ecosystem, I bring a versatile skill set to every project.
-
-    I also enjoy showing off my skills in <b>various competitions</b>. My most notable achievement is my participation in the prestigious <b>WorldSkills</b> competitions, where I won a <b>gold medal in Web Technologies category</b>, making me a <b>world champion</b>.`,
-  echo: (_, args) => args.join("&nbsp;"),
+    Apart from development, I have a strong interest in <b>ethical hacking</b> and <b>cybersecurity</b>, exploring ways to understand and enhance the security of applications and systems. With hands‑on experience in <b>JavaScript frameworks (React, Express, NestJS, etc.)</b> and <b>security practices</b>, I bring a versatile and well‑rounded skill set to every project.`,
   history: (_, __, history) => history.join("<br/>"),
+  projects: () => `My Projects:
+
+    🎵 <b>Music Player</b> - Built using Flutter
+    🤖 <b>WhatsApp Bot</b> - Using Baileys Whiskeysocket
+    🛡️ <b>Phishing Detection</b> - Using Machine Learning`,
 };
 
 export const COMMAND_NAMES = [...Object.keys(COMMANDS), "clear", "help"].sort(

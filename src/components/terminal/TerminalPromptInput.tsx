@@ -27,7 +27,7 @@ const TerminalPromptInput: FC<TerminalPromptInputProps> = ({
   const [input, setInput] = useState("");
   const [inputFocus, setInputFocus] = useState(false);
   const [shouldBlink, setShouldBlink] = useState(true);
-  const shouldBlinkTimeoutRef = useRef<number>();
+  const shouldBlinkTimeoutRef = useRef<ReturnType<typeof setTimeout>>();
 
   const [caretPosition, setCaretPosition] = useState(0);
   const [currentHistoryIndex, setCurrentHistoryIndex] = useState(
