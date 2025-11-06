@@ -1,9 +1,8 @@
 {
-  "name": "0l1v3rr.github.io",
-  "private": true,
+  "name": "aswin",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://0l1v3rr.github.io/0l1v3rr_mod",
+  "homepage": "https://avairo.github.io/aswin",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

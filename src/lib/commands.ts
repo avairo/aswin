@@ -97,9 +97,10 @@ const COMMANDS: Record<
   history: (_, __, history) => history.join("<br/>"),
   projects: () => `My Projects:
 
-    🎵 <b>Music Player</b> - Built using Flutter
-    🤖 <b>WhatsApp Bot</b> - Using Baileys Whiskeysocket
-    🛡️ <b>Phishing Detection</b> - Using Machine Learning`,
+    🎵 <b>Music Player</b> - Built using Flutter with local playback and playlists.
+    🛡️ <b>Phishing Detection Web App</b> - Flask-based web app that detects phishing URLs using Machine Learning and real-time URL feature analysis. It also educates users on phishing types, prevention methods, and safe browsing practices through an interactive interface.
+    😂 <b>Expression Meme Generator</b> - A fun Python app using MediaPipe and OpenCV that detects your facial expressions and displays different meme images in real time.
+    💪 <b>Push-Up Counter App</b> - In development (using MediaPipe + TensorFlow). Detects human posture and counts push-ups automatically through camera tracking.`,
 };
 
 export const COMMAND_NAMES = [...Object.keys(COMMANDS), "clear", "help"].sort(
