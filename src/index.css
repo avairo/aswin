@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure background image works in both dev and production */
+@layer base {
+  body {
+    background-image: url('/assets/kali-layers.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
 *::selection {
   color: unset;
   background-color: rgba(255, 255, 255, 0.2);
@@ -24,4 +35,20 @@
   .terminal-scrollbar::-webkit-scrollbar-thumb {
     @apply rounded-md border-[3px] border-solid border-transparent bg-kali-gray/[.2] bg-clip-content;
   }
+}
+
+/* Force badge to be on top */
+.badge-overlay {
+  z-index: 2147483647 !important; /* Maximum z-index value */
+  position: fixed !important;
+}
+
+.terminal-container {
+  z-index: 1 !important;
+  position: fixed !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
 }
