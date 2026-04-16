@@ -17,64 +17,64 @@ const KALI_LOGO = `
       <span>${".....''''..........,:ld;".replace(/ /g, "&nbsp;")}</span>
       <span>${"           .';;;:::;,,.x,".replace(/ /g, "&nbsp;")}</span>
       <span>${"      ..'''.            0Xxoc:,.  ...".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"  ....                ,ONkc;,;cokOdc',.".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${" .                   OMo           ':ddo.".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
 
       <span>${"                    dMc               :OO;".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                    0M.                 .:o.".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                    ;Wd".replace(/ /g, "&nbsp;")}</span>
       <span>${"                     ;XO,".replace(/ /g, "&nbsp;")}</span>
       <span>${"                       ,d0Odlc;,..".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                            ..',;:cdOOd::,.".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                     .:d;.':;.".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                        'd,  .'".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                          ;l   ..".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                           .o".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                             c".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                             .'".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
       <span>${"                                              .".replace(
-        / /g,
-        "&nbsp;"
-      )}</span>
+  / /g,
+  "&nbsp;"
+)}</span>
     </span>
   `;
 
@@ -97,10 +97,11 @@ const COMMANDS: Record<
   history: (_, __, history) => history.join("<br/>"),
   projects: () => `My Projects:
 
+    🎯 <b>Sentinel</b> - AI-powered cybersecurity platform that monitors network traffic using Suricata IDS and transforms raw alerts into real-time visual insights. Features live threat mapping, interactive dashboards, and an intelligent AI assistant that explains complex security events in simple terms. Designed for beginners, professionals, and homelab setups.
     🎵 <b>Music Player</b> - Built using Flutter with local playback and playlists.
     🛡️ <b>Phishing Detection Web App</b> - Flask-based web app that detects phishing URLs using Machine Learning and real-time URL feature analysis. It also educates users on phishing types, prevention methods, and safe browsing practices through an interactive interface.
     😂 <b>Expression Meme Generator</b> - A fun Python app using MediaPipe and OpenCV that detects your facial expressions and displays different meme images in real time.
-    💪 <b>Push-Up Counter App</b> - In development (using MediaPipe + TensorFlow). Detects human posture and counts push-ups automatically through camera tracking.`,
+    🖤 <b>EmoOculto</b> - A steganography-based web tool that enables secure message hiding within emojis using zero-width Unicode characters. It allows users to encode secret text into emoji sequences and later extract hidden data, demonstrating practical concepts of data concealment and covert communication.`,
 };
 
 export const COMMAND_NAMES = [...Object.keys(COMMANDS), "clear", "help"].sort(
